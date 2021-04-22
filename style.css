@@ -1,0 +1,47 @@
+body{
+    width: 960px;
+    margin: auto;
+}
+header{
+    text-align: left;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+#leftSideLogo{
+   
+    display: grid;
+    grid-template-columns:50px 1fr;
+  
+}
+#leftSideLogo #textLogo{
+   margin-top: 0px;
+    
+}
+#rightSideLogo{
+    display: grid;
+    grid-template-columns: 200px 70px;
+}
+main  {
+ display: grid;
+ grid-template-rows: 70px 1fr 1fr;
+gap: 20px;
+}
+main #headerMain{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+main #mainBody{
+
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px;
+}
+#mainBody p{
+    text-indent: 50px;
+  
+}
+form{
+    background-image: url(./assests/list-bg.png);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
