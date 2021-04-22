@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+
+
 body{
     width: 960px;
     margin: auto;
@@ -6,7 +11,18 @@ header{
     text-align: left;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+
 }
+#textLogo h1 {
+    font-family: 'Yellowtail', cursive;
+}
+
+#chocoPizza {
+    font-family: 'Oswald', sans-serif;
+}
+
+
 #leftSideLogo{
    
     display: grid;
@@ -20,28 +36,80 @@ header{
 #rightSideLogo{
     display: grid;
     grid-template-columns: 200px 70px;
+    float: right;
 }
+
 main  {
  display: grid;
- grid-template-rows: 70px 1fr 1fr;
+ grid-template-rows: 150px 1fr 150px;
 gap: 20px;
 }
-main #headerMain{
+
+#headerMain{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+
 }
-main #mainBody{
+#mainBody{
 
     display: grid;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: 1fr 60px 60px 60px 5px;
     gap: 20px;
 }
 #mainBody p{
     text-indent: 50px;
-  
+   
 }
+
+
+
 form{
     background-image: url(./assests/list-bg.png);
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    font-family: 'Patrick Hand', cursive;
 }
+
+input:checked+label {
+    text-decoration: line-through;
+}
+
+#hr {
+    background-image:url('./assests/hr-img.png') ;
+    background-repeat: repeat;
+    width: 100%;
+}
+
+#commintFan {
+    display: grid;
+    grid-template-columns: 70px 670px 150px;
+    gap: 20px;
+    align-items: center;
+}
+
+#commintFan p{
+    font-size: larger;
+}
+
+#button {
+    float: right;
+    background-color: rgba(165, 42, 42, 0.897) ;
+    color: white;
+    width: 200px;
+    height: 50px;
+    margin-top: 0px;
+}
+
+footer {
+    display: grid;
+    grid-template-rows: 50px 25px 25px;
+    text-align: center;
+}
+footer img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
